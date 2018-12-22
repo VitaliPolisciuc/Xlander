@@ -1,0 +1,316 @@
+.container{
+width: 970px;
+margin: auto;
+}
+.dark_background{
+  background-color: rgba(0,0,0,0.5)
+}
+.bradius_big{
+  border-radius: 5px;
+}
+#homepage_header{
+  background-image: url(images/Header_mobile.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+#homepage_header::before{
+  content: "";
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQYV2NkYGCYycDAsIWRgYHBlwEIABEUAZ0W+597AAAAAElFTkSuQmCC);
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+
+}
+#header_hero{
+  position: relative;;
+  z-index: 1;
+}
+#header_banner{
+  float: left;
+  width: 66%;
+  position: relative;
+  right: 8vw;
+  top:15vh;
+  color: white;
+}
+#header_banner h1{
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10vh;
+  letter-spacing: -5px;
+  font-weight: 600;
+}
+#header_banner h2{
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 4vh;
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin-top: 3vh;
+}
+#header_banner p{
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: -1px;
+  margin-top: 3vh;
+}
+#header_banner a:nth-child(4){
+  height: 40px;
+  width: 170px;
+  border: 1px solid #ed943b;
+  border-radius: 5px;
+  background-color: #ed943b;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #212428;
+  letter-spacing: -1px;
+  padding: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+  top:6vh;
+}
+#header_banner a:nth-child(4):hover{
+ color: white;
+ box-shadow: 0 0 10px #ed943b;
+}
+#header_banner a:nth-child(5){
+  height: 40px;
+  width: 170px;
+  border: 1px solid #ed943b;
+  border-radius: 5px;
+  background-color: #ed943b;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #212428;
+  letter-spacing: -1px;
+  padding: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+  top: 6vh;
+  left: 3vh;
+}
+#header_banner a:nth-child(5):hover{
+ color: white;
+ box-shadow: 0 0 10px #ed943b;
+}
+#header_signup_form{
+  float: right;
+  width: 33%;
+  height: 50vh;
+  margin-top: 15vh;
+}
+#header_signup_form h3{
+  margin-top: 5vh;
+  margin-left: 2.5vw;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: arial;
+  font-size: 20px;
+}
+#header_signup_form input{
+  height: 30px;
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#header_signup_form p{
+  margin: 10px;
+  margin-top: 30px;
+  margin-left: 15px;
+  color: white;
+  font-family: arial;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#header_signup_form button{
+  height: 40px;
+  width: 170px;
+  margin-top: 10px;
+  margin-left: 75px;
+  border: 1px solid #ed943b;
+  border-radius: 5px;
+  background-color: #ed943b;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #212428;
+
+}
+#header_signup_form button:hover{
+  color: white;
+  box-shadow: 0 0 10px #ed943b;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+#header_nav{
+  height: 10vh;
+  background-color: #1e1a16;
+  opacity: 0.7;
+}
+
+.logo{
+  position: relative;
+  float: left;
+  padding-top: 3vh;
+  padding-left: 15vw;
+  margin-right: 20vw;
+  font-family: 'Mukta', sans-serif;
+  font-stretch: condensed;
+  font-size: 2em;
+  letter-spacing: -1px;
+
+}
+.logo a span{
+  color: #ed943b;
+}
+#header_nav ul li:not(.logo){
+  position: relative;
+  float:left;
+  padding-top: 4vh;
+  list-style: none;
+  padding-left: 1.5vw;
+  font-weight: 600;
+  font-family: arial;
+  text-transform: uppercase;
+
+}
+#header_nav ul li:last-child{
+  font-size: 35px;
+  display: none;
+  position: relative;
+  bottom: 10px;
+  height: 10px;
+}
+#header_nav ul li:not(.logo) a:hover{
+  color:#ed943b;
+  text-shadow: 0 0 10px #ed943b;
+}
+#header_nav ul li:nth-child(2) a{
+  color: #ed943b;
+}
+#header_nav ul li:nth-child(2) a:hover{
+  color: white;
+  text-shadow: 0 0 10px white;
+}
+@media screen and (max-width:1280px){
+ .logo{
+   margin-right: 13vw;
+ }
+ #header_banner{
+   right: 2vw;
+ }
+ #header_nav ul li:last-child{
+   display: none;
+ }
+}
+@media screen and (max-width:1100px){
+ .logo{
+   margin-right: 5vw;
+   padding-left: 10vw;
+ }
+ #header_signup_form{
+   margin-top: 30vh;
+   margin-right: 35vw;
+ }
+ #header_banner{
+   left: 15vw;
+ }
+ #homepage_header{
+   background-image: url(images/Header_mobile.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100vw;
+   height: 150vh;
+ }
+ #homepage_header::before{
+   content: "";
+   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQYV2NkYGCYycDAsIWRgYHBlwEIABEUAZ0W+597AAAAAElFTkSuQmCC);
+   width: 100vw;
+   height: 150vh;
+   display: block;
+   position: absolute;
+
+ }
+ #header_banner h1{
+   text-align: center;
+ }
+ #header_banner h2{
+   text-align: center;
+ }
+ #header_banner p{
+   text-align: center;
+ }
+#header_banner a:nth-child(4){
+  margin-left: 13vw;
+}
+}
+@media screen and (max-width:1000px){
+ .logo{
+   padding-left: 6vw;
+ }
+ #header_banner h1{
+   text-align: center;
+ }
+ #header_banner h2{
+   text-align: center;
+ }
+ #header_banner p{
+   text-align: center;
+ }
+#header_banner a:nth-child(4){
+  margin-left: 13vw;
+}
+}
+@media screen and (max-width:860px){
+ #header_nav ul li:not(.logo){
+   display: none;
+ }
+ #header_signup_form{
+   margin-top: 30vh;
+   margin-right: 50vw;
+ }
+ #header_banner{
+   left: 15vw;
+ }
+ #header_nav ul li:last-child{
+   display: inline;
+   margin-left: 50vw;
+ }
+}
+@media screen and (max-width:690px){
+ #header_nav ul li:not(.logo){
+   display: none;
+ }
+   #header_signup_form{
+     margin-top: 30vh;
+     margin-right: 70vw;
+   }
+   #header_nav ul li:last-child{
+     display: inline;
+     margin-left: 50vw;
+   }
+ }
+}
+@media screen and (max-width:500px){
+ #header_nav ul li:not(.logo){
+   display: none;
+ }
+   #header_signup_form{
+     margin-top: 30vh;
+     margin-right: 90vw;
+   }
+   #header_banner{
+     left: 15vw;
+   }
+   #header_nav ul li:last-child{
+     display: inline;
+     margin-left: 50vw;
+   }
+}

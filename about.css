@@ -1,0 +1,41 @@
+body{
+  font-family: 'Roboto', sans-serif;
+
+}
+body p{
+  color: #333;
+}
+.container{
+width: 970px;
+margin: auto;
+}
+.heading{
+  background-color: red;
+  text-align: center;
+
+}
+.heading h1{
+  position: relative;
+  top:23px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+.heading h2{
+  position: relative;
+  bottom:25px;
+}
+#features{
+  background-color: #e6e6e6;
+}
+#about h1,h2,h3{
+  color: #222;
+}
+h1{
+  font-size: 25px;
+}
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size:24px;
+}
